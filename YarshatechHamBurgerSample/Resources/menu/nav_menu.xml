@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:myapp="http://schemas.android.com/apk/res-auto">
+  <group android:checkableBehavior="single">
+    <item
+      android:id="@+id/nav_home"
+      android:icon="@drawable/ic_launcher"
+      android:title="Home" />
+    <item
+      android:id="@+id/nav_item1"
+      android:icon="@drawable/ic_launcher"
+      android:title="Item One" />
+    <item
+      android:id="@+id/nav_item2"
+      android:icon="@drawable/ic_launcher"
+      android:title="Item Two" />
+
+  </group>
+  <item android:title="Settings">
+    <menu xmlns:myapp="http://schemas.android.com/apk/res-auto"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+      <item
+        android:id="@+id/nav_switch_one"
+        android:title="Setting Option One"
+        myapp:showAsAction="always"
+        myapp:actionLayout="@layout/switch_nav"/>
+      <item
+        android:id="@+id/nav_switch_two"
+        android:title="Setting Option Two"
+        myapp:showAsAction="always"
+        myapp:actionLayout="@layout/switch_nav"/>
+      <item
+        android:id="@+id/nav_switch_three"
+        android:title="Settion Option Three"
+        myapp:showAsAction="always"
+        myapp:actionLayout="@layout/switch_nav"/>
+    </menu>
+  </item>
+  <item android:title="Profile">
+    <menu>
+      <item
+        android:title="My Profile "
+        android:id="@+id/nav_profile"/>
+    </menu>
+
+  </item>
+</menu>
